@@ -1,0 +1,630 @@
+@import "../resetear/reset";
+@import "../utiles/colores";
+
+
+
+/*algo de nesting - 
+mobile first */
+
+.nav-link {
+
+    margin: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: $terciario;
+    border-radius: 15%;
+}
+
+form {
+
+
+    input[type="text"],
+    input[type="email"] {
+        width: 55%;
+        padding: 3% 5%;
+        border: 1px solid $blanco;
+        border-radius: 5%;
+        background-color: $blanco;
+        margin: 3% 0%;
+        display: inline-block;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border: 0.2rem solid;
+        border-radius: 7%;
+        display: block;
+        color: $blanco;
+        background-color: $principal ;
+    }
+
+    input[type="submit"]:hover {
+        cursor: pointer;
+    }
+
+    textarea {
+        width: 100%;
+        height: 10rem;
+        border: 1rem solid $blanco;
+        border-radius: 3px;
+        background-color: $blanco;
+        margin: 1rem 0;
+        resize: vertical;
+        display: block;
+    }
+}
+
+footer {
+    grid-area: piePagina;
+    background-color: $blanco;
+    bottom: 0;
+}
+
+.formatoCentral {
+    display: grid;
+    grid-template-areas: "menuNavegar"
+        "cuerpo"
+        "piePagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    color: $principal;
+}
+
+.txtInicio {
+    grid-area: cuerpo;
+    font-size: 1.2rem;
+    color: $principal;
+    padding: 1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.chico {
+    width: 35px;
+}
+
+.medio {
+    width: 50%;
+}
+
+.btn:active {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: $principal;
+}
+
+.btn {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: $principal;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.mainSomos {
+    display: grid;
+    grid-area: cuerpo;
+}
+
+.sectionSomos {
+    display: grid;
+    background-color: $blanco;
+    grid-template-areas: "txtSomos   txtSomos    txtSomos"
+        "fotoMatriz dirMatriz   txtMatriz"
+        "fotoSerena dirSerena   txtSerena"
+        "fotoValpo  dirValpo    txtValpo";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 2fr;
+}
+
+.txtSomos {
+    grid-area: txtSomos;
+    background-color: $blanco;
+    font-size: 1.2rem;
+    color: $principal;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.fotoMatriz {
+    grid-area: fotoMatriz;
+}
+
+.dirMatriz {
+    grid-area: dirMatriz;
+    font-size: 0.8rem;
+}
+
+.txtMatriz {
+    grid-area: txtMatriz;
+    font-size: 0.8rem;
+}
+
+.fotoSerena {
+    grid-area: fotoSerena;
+}
+
+.dropdown-menu {
+    font-size: small;
+    font-weight: bold;
+}
+
+.dirSerena {
+    grid-area: dirSerena;
+    font-size: 0.8rem;
+}
+
+.txtSerena {
+    grid-area: txtSerena;
+    font-size: 0.8rem;
+}
+
+.fotoValpo {
+    grid-area: fotoValpo;
+}
+
+.dirValpo {
+    grid-area: dirValpo;
+    font-size: 0.8rem;
+}
+
+.txtValpo {
+    grid-area: txtValpo;
+    font-size: 0.8rem;
+}
+
+.carousel-inner {
+    padding-top: 8rem;
+}
+
+.formu {
+    width: 90%;
+    padding: 5%;
+    border-radius: 5%;
+    margin: auto;
+    background-color: $blanco;
+}
+
+.menuFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.btnFooter {
+    display: flex;
+    border-radius: 5rem;
+    justify-content: center;
+    display: flex;
+    background-color: $blanco;
+}
+
+.fotoProd {
+    grid-area: doscolprod;
+    text-align: center;
+}
+
+.btn {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: $principal;
+}
+
+.btn:visited {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: $principal;
+}
+
+#tarjSucursal {
+    background-color: $principal;
+}
+
+#letraSucursal {
+    color: $principal;
+}
+
+/*algo de nesting*/
+/*TODO PARA FORMATO ESCRITORIO*/
+@media screen and (min-width: 768px) {
+
+    .nav-link {
+
+        margin: 0.2rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: $terciario;
+        border-radius: 15%;
+    }
+
+    .container-fluid {
+        background-color: $blanco;
+    }
+
+    nav {
+        background-color: $blanco;
+
+        ul {
+
+            li {
+                a:hover {
+                    opacity: 60%;
+                    transition: 0.5s;
+                    color: $negro;
+                }
+
+                a {
+                    background-color: rgb(230, 197, 164);
+                    padding: 1rem;
+                    margin-inline-start: 5px;
+                    border-radius: 1rem;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    header {
+        grid-area: menuNavegar;
+        background-color: rgba(241, 241, 241, 0);
+    }
+
+    h3 {
+        opacity: 40%;
+    }
+
+    h3:hover {
+        opacity: 100%;
+    }
+
+    h1 {
+        color: $principal;
+        font-size: 1.5rem;
+        text-align: right;
+        margin-right: 10rem;
+        margin-top: 1rem;
+    }
+
+    header h2 {
+        color: $principal;
+        font-size: 1rem;
+        text-align: right;
+        margin-right: 10rem;
+    }
+
+
+    label {
+        width: 40%;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 55%;
+        padding: 3% 5%;
+        border: 1px solid $blanco;
+        border-radius: 5%;
+        background-color: $blanco;
+        margin: 3% 0%;
+        display: inline-block;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border: 0.2rem solid;
+        border-radius: 7%;
+        display: block;
+        color: $blanco;
+        background-color: $principal;
+    }
+
+    input[type="submit"]:hover {
+        cursor: pointer;
+    }
+
+    textarea {
+        width: 100%;
+        height: 10rem;
+        border: 1rem solid $blanco;
+        border-radius: 3px;
+        background-color: $blanco;
+        margin: 1rem 0;
+        resize: vertical;
+        display: block;
+    }
+
+
+    footer {
+        grid-area: piePagina;
+        background-color: $blanco;
+
+
+    }
+
+    .formatoCentral {
+        display: grid;
+        grid-template-areas: "menuNavegar"
+            "cuerpo"
+            "piePagina";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        background-color: rgba(241, 241, 241, 0.486);
+    }
+
+    .logoGf {
+        text-align: center;
+        animation-name: un_efecto;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;
+    }
+
+
+    .card {
+        margin-bottom: 4rem;
+    }
+
+    .txtInicio {
+        grid-area: cuerpo;
+        font-size: 1.5rem;
+        color: $principal;
+        padding: 0rem 6rem;
+        margin-top: 4rem;
+        line-height: 1.8rem;
+        justify-content: center;
+    }
+
+    .chico {
+        width: 35px;
+    }
+
+    .medio {
+        width: 70%;
+    }
+
+
+    .foto {
+        width: 90%;
+        border-radius: 2rem;
+        text-align: center;
+    }
+
+    .centrar {
+        text-align: center;
+    }
+
+    .fotoProd {
+        text-align: center;
+        width: 40%;
+        margin: 1rem 30rem;
+    }
+
+    .mainSomos {
+        display: grid;
+        grid-area: cuerpo;
+        background-color: rgba(255, 255, 255, 0);
+        grid-template-areas: "uno dos tres";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .tarjeta {
+        display: grid;
+        grid-area: dos;
+    }
+
+    .sectionSomos {
+        display: grid;
+        background-color: $blanco;
+        grid-template-areas: "txtSomos   txtSomos    txtSomos"
+            "fotoMatriz dirMatriz   txtMatriz"
+            "fotoSerena dirSerena   txtSerena"
+            "fotoValpo  dirValpo    txtValpo";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 2fr;
+    }
+
+    .w18 {
+        width: 18rem;
+    }
+
+
+    .mainProductos {
+        grid-area: cuerpo;
+        grid-template-areas: "unocolprod doscolprod trescolprod";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .txtSomos {
+        grid-area: txtSomos;
+        background-color: $blanco;
+        font-size: 2.5rem;
+        color: $principal;
+        padding: 1rem;
+        text-align: justify;
+        margin: 5rem 0;
+    }
+
+    .fotoMatriz {
+        grid-area: fotoMatriz;
+        width: 40%;
+        margin-left: 10rem;
+    }
+
+    .fotoSerena {
+        grid-area: fotoSerena;
+        width: 40%;
+        margin-left: 10rem;
+    }
+
+    .fotoValpo {
+        grid-area: fotoValpo;
+        width: 40%;
+        margin-left: 10rem;
+    }
+
+    .dirMatriz {
+        grid-area: dirMatriz;
+        font-size: 1.8rem;
+    }
+
+    .dirSerena {
+        grid-area: dirSerena;
+        font-size: 1.8rem;
+    }
+
+    .dirValpo {
+        grid-area: dirValpo;
+        font-size: 1.8rem;
+    }
+
+    .txtSerena {
+        grid-area: txtSerena;
+        font-size: 1.8rem;
+    }
+
+    .txtMatriz {
+        grid-area: txtMatriz;
+        font-size: 1.8rem;
+    }
+
+    .txtValpo {
+        grid-area: txtValpo;
+        font-size: 1.8rem;
+    }
+
+    .formu {
+        width: 35%;
+        padding: 5%;
+        border-radius: 5%;
+        margin: auto;
+        background-color: #ccc;
+    }
+
+    .video {
+        width: 80%;
+        height: 30rem;
+    }
+
+    .menuFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        list-style-type: none;
+        text-decoration: none;
+        margin-right: 2rem;
+    }
+
+    .btnFooter {
+        display: flex;
+        border-radius: 5rem;
+        justify-content: center;
+        display: flex;
+        background-color: white;
+    }
+
+    footer a:hover {
+        background-color: white;
+        font-weight: bold;
+        transform: scale(1.4, 1.4);
+        transition: 0.4s;
+    }
+
+    .btn:hover {
+        background-color: $blanco;
+        border-color: $principal;
+        color: $principal;
+    }
+
+    .btn {
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
+        color: $principal;
+    }
+
+    .btn:visited {
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
+        color: $principal;
+    }
+
+
+    #tarjSucursal {
+        background-color: $principal;
+    }
+
+    #letraSucursal {
+        color: $principal;
+    }
+
+    #carouselExampleControls {
+        padding: 0rem 10rem;
+    }
+
+    #imagen-cambiante {
+        width: 22rem;
+        height: 30rem;
+        background: url(../assets/img/carpintero.png) no-repeat;
+    }
+
+    #imagen-cambiante:hover {
+        background: url(../assets/img/carpinteroColor.png) no-repeat;
+        transition: 2s ease-in-out;
+        opacity: 40%;
+    }
+
+    @keyframes un_efecto {
+        10% {
+            color: $negro;
+        }
+
+        20% {
+            color: $blanco;
+        }
+
+        30% {
+            color: red;
+        }
+
+        40% {
+            color: blue;
+        }
+
+        50% {
+            color: orange;
+        }
+
+        60% {
+        color: greenyellow;
+        }
+
+        70% {
+        color: blueviolet;
+        }
+
+        80% {
+        color: cyan;
+        }
+
+        90% {
+        color: fuchsia;
+        }}}
