@@ -1,57 +1,15 @@
 * {
-  margin: 10;
+  margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-/*algo de nesting - 
-mobile first */
 .nav-link {
-  margin: 0.2rem;
+  margin: 0.3rem;
   font-weight: bold;
   text-align: center;
-  background-color: rgb(255, 205, 154);
+  background-color: green;
   border-radius: 15%;
-}
-
-form input[type=text],
-form input[type=email] {
-  width: 55%;
-  padding: 3% 5%;
-  border: 1px solid rgba(241, 241, 241, 0.486);
-  border-radius: 5%;
-  background-color: rgba(241, 241, 241, 0.486);
-  margin: 3% 0%;
-  display: inline-block;
-}
-form input[type=submit] {
-  width: 100%;
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  border: 0.2rem solid;
-  border-radius: 7%;
-  display: block;
-  color: rgba(241, 241, 241, 0.486);
-  background-color: rgb(128, 64, 0);
-}
-form input[type=submit]:hover {
-  cursor: pointer;
-}
-form textarea {
-  width: 100%;
-  height: 10rem;
-  border: 1rem solid rgba(241, 241, 241, 0.486);
-  border-radius: 3px;
-  background-color: rgba(241, 241, 241, 0.486);
-  margin: 1rem 0;
-  resize: vertical;
-  display: block;
-}
-
-footer {
-  grid-area: piePagina;
-  background-color: rgba(241, 241, 241, 0.486);
-  bottom: 0;
 }
 
 .formatoCentral {
@@ -107,7 +65,7 @@ footer {
 
 .sectionSomos {
   display: grid;
-  background-color: rgba(241, 241, 241, 0.486);
+  background-color: white;
   grid-template-areas: "txtSomos   txtSomos    txtSomos" "fotoMatriz dirMatriz   txtMatriz" "fotoSerena dirSerena   txtSerena" "fotoValpo  dirValpo    txtValpo";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr 2fr;
@@ -115,7 +73,7 @@ footer {
 
 .txtSomos {
   grid-area: txtSomos;
-  background-color: rgba(241, 241, 241, 0.486);
+  background-color: white;
   font-size: 1.2rem;
   color: rgb(128, 64, 0);
   padding: 1rem;
@@ -178,7 +136,7 @@ footer {
   padding: 5%;
   border-radius: 5%;
   margin: auto;
-  background-color: rgba(241, 241, 241, 0.486);
+  background-color: white;
 }
 
 .menuFooter {
@@ -195,7 +153,7 @@ footer {
   border-radius: 5rem;
   justify-content: center;
   display: flex;
-  background-color: rgba(241, 241, 241, 0.486);
+  background-color: white;
 }
 
 .fotoProd {
@@ -215,6 +173,46 @@ footer {
   color: rgb(128, 64, 0);
 }
 
+form input[type=text],
+form input[type=email] {
+  width: 55%;
+  padding: 3% 5%;
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color: white;
+  margin: 3% 0%;
+  display: inline-block;
+}
+form input[type=submit] {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: 0.2rem solid;
+  border-radius: 7%;
+  display: block;
+  color: white;
+  background-color: rgb(128, 64, 0);
+}
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+form textarea {
+  width: 100%;
+  height: 10rem;
+  border: 1rem solid white;
+  border-radius: 3px;
+  background-color: white;
+  margin: 1rem 0;
+  resize: vertical;
+  display: block;
+}
+
+footer {
+  grid-area: piePagina;
+  background-color: white;
+  bottom: 0;
+}
+
 #tarjSucursal {
   background-color: rgb(128, 64, 0);
 }
@@ -223,8 +221,6 @@ footer {
   color: rgb(128, 64, 0);
 }
 
-/*algo de nesting*/
-/*TODO PARA FORMATO ESCRITORIO*/
 @media screen and (min-width: 768px) {
   .nav-link {
     margin: 0.2rem;
@@ -234,10 +230,10 @@ footer {
     border-radius: 15%;
   }
   .container-fluid {
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
   }
   nav {
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
   }
   nav ul li a:hover {
     opacity: 60%;
@@ -286,9 +282,9 @@ footer {
 input[type=email] {
     width: 55%;
     padding: 3% 5%;
-    border: 1px solid rgba(241, 241, 241, 0.486);
+    border: 1px solid white;
     border-radius: 5%;
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
     margin: 3% 0%;
     display: inline-block;
   }
@@ -299,7 +295,7 @@ input[type=email] {
     border: 0.2rem solid;
     border-radius: 7%;
     display: block;
-    color: rgba(241, 241, 241, 0.486);
+    color: white;
     background-color: rgb(128, 64, 0);
   }
   input[type=submit]:hover {
@@ -308,16 +304,16 @@ input[type=email] {
   textarea {
     width: 100%;
     height: 10rem;
-    border: 1rem solid rgba(241, 241, 241, 0.486);
+    border: 1rem solid white;
     border-radius: 3px;
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
     margin: 1rem 0;
     resize: vertical;
     display: block;
   }
   footer {
     grid-area: piePagina;
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
   }
   .formatoCentral {
     display: grid;
@@ -384,7 +380,7 @@ input[type=email] {
   }
   .sectionSomos {
     display: grid;
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
     grid-template-areas: "txtSomos   txtSomos    txtSomos" "fotoMatriz dirMatriz   txtMatriz" "fotoSerena dirSerena   txtSerena" "fotoValpo  dirValpo    txtValpo";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 2fr;
@@ -400,7 +396,7 @@ input[type=email] {
   }
   .txtSomos {
     grid-area: txtSomos;
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
     font-size: 2.5rem;
     color: rgb(128, 64, 0);
     padding: 1rem;
@@ -479,7 +475,7 @@ input[type=email] {
     transition: 0.4s;
   }
   .btn:hover {
-    background-color: rgba(241, 241, 241, 0.486);
+    background-color: white;
     border-color: rgb(128, 64, 0);
     color: rgb(128, 64, 0);
   }
@@ -517,7 +513,7 @@ input[type=email] {
       color: black;
     }
     20% {
-      color: rgba(241, 241, 241, 0.486);
+      color: white;
     }
     30% {
       color: red;
@@ -546,7 +542,7 @@ input[type=email] {
       color: black;
     }
     20% {
-      color: rgba(241, 241, 241, 0.486);
+      color: white;
     }
     30% {
       color: red;
