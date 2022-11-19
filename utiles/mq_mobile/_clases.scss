@@ -3,7 +3,7 @@
     margin: 0.3rem;
     font-weight: bold;
     text-align: center;
-    background-color: $fondo;
+    background-color: $terciario;
     border-radius: 15%;
 }
 .formatoCentral {
@@ -24,7 +24,12 @@
     line-height: 1.8rem;
     text-align: justify;
 }
-
+.letragf {
+    width: 8%;
+}
+.logogf {
+    width: 12%;
+}
 .chico {
     width: 35px;
 }
@@ -131,13 +136,16 @@
 }
 
 .formu {
-    width: 90%;
-    padding: 5%;
+    width: 80%;
+    padding: 3%;
     border-radius: 5%;
     margin: auto;
-    background-color: $blanco;
+    background-color:$terciario;
 }
-
+.blockquote{
+    width: 95%;
+    font-size: 95%;
+}
 .menuFooter {
     display: flex;
     flex-direction: row;
@@ -171,18 +179,27 @@
     background-color: rgba(255, 255, 255, 0);
     color: $principal;
 }
+
+label {
+    width: 40%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
 form {
 
 
     input[type="text"],
     input[type="email"] {
-        width: 55%;
+        font-size: 0,4rem;
+        width: 75%;
         padding: 3% 5%;
         border: 1px solid $blanco;
         border-radius: 5%;
         background-color: $blanco;
         margin: 3% 0%;
-        display: inline-block;
+        display: block;
     }
 
     input[type="submit"] {
