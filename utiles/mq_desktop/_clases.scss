@@ -420,6 +420,7 @@ footer {
 
 
 .btnmapafooter {
+    font-size: small;
     min-width: 130px;
     height: 40px;
     color: black;
@@ -429,10 +430,6 @@ footer {
     transition: all 0.8s ease;
     position: relative;
     display: inline ;
-    text-align: right;
-    outline:auto;
-    border-radius: 20px;
-    border: 2px solid white;
     background: white;
     text-decoration: none;
     list-style-type: none;
