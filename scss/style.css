@@ -163,6 +163,7 @@
   list-style-type: none;
   text-decoration: none;
   margin-right: 2rem;
+  margin-top: 1rem;
 }
 
 .btnFooter {
@@ -257,9 +258,42 @@ footer {
   list-style-type: none;
 }
 
+.precioprod {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: rgb(128, 64, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.precioprod:hover {
+  background-color: rgb(247, 125, 3);
+  color: black;
+}
+
+.precioprod:active {
+  background-color: rgb(199, 100, 2);
+  box-shadow: 0 5px rgb(80, 80, 80);
+  transform: translateY(4px);
+}
+
 .btnmapafooter:hover {
   background: black;
   color: white;
+}
+
+.video {
+  width: 80%;
+  height: 30rem;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 #tarjSucursal {
@@ -273,6 +307,7 @@ footer {
 @media screen and (min-width: 768px) {
   nav {
     background-color: white;
+    padding-bottom: 0%;
   }
   nav ul li a:hover {
     opacity: 60%;
@@ -370,9 +405,11 @@ input[type=email] {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto;
     background-color: rgba(241, 241, 241, 0.486);
+    margin-top: 10rem;
   }
   .card {
     margin-bottom: 4rem;
+    margin-top: 6rem;
   }
   .txtInicio {
     grid-area: cuerpo;
@@ -413,7 +450,7 @@ input[type=email] {
   .tarjeta {
     display: grid;
     grid-area: dos;
-    margin-top: 10rem;
+    margin-top: 0rem;
   }
   .sectionSomos {
     display: grid;
@@ -489,6 +526,7 @@ input[type=email] {
   .video {
     width: 80%;
     height: 30rem;
+    margin-top: 5rem;
   }
   .menuFooter {
     display: flex;
@@ -607,6 +645,29 @@ input[type=email] {
     90% {
       color: fuchsia;
     }
+  }
+  .precioprod {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: rgb(128, 64, 0);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .precioprod:hover {
+    background-color: rgb(247, 125, 3);
+    color: black;
+  }
+  .precioprod:active {
+    background-color: rgb(199, 100, 2);
+    box-shadow: 0 5px rgb(80, 80, 80);
+    transform: translateY(4px);
   }
   .btnmapafooter {
     min-width: 130px;

@@ -1,6 +1,6 @@
 nav {
     background-color: $blanco;
-
+    padding-bottom: 0%;
     ul {
 
         li {
@@ -123,12 +123,14 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto;
     background-color: rgba(241, 241, 241, 0.486);
+    margin-top: 10rem;
 }
 
 
 
 .card {
     margin-bottom: 4rem;
+    margin-top: 6rem;
 }
 
 .txtInicio {
@@ -178,7 +180,7 @@ footer {
 .tarjeta {
     display: grid;
     grid-area: dos;
-    margin-top: 10rem;
+    margin-top: 0rem;
 }
 
 .sectionSomos {
@@ -273,6 +275,7 @@ footer {
 .video {
     width: 80%;
     height: 30rem;
+    margin-top: 5rem;
 }
 
 .menuFooter {
@@ -388,9 +391,31 @@ footer {
     }
 }
 
+.precioprod {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: $principal;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
 
+.precioprod:hover {
+    background-color:$secundario;
+    color: black;
+}
 
-
+.precioprod:active {
+    background-color: rgb(199, 100, 2);
+    box-shadow: 0 5px rgb(80, 80, 80);
+    transform: translateY(4px);
+}
 
 
 
