@@ -38,7 +38,7 @@
 }
 
 .chico {
-  width: 35px;
+  width: 25px;
 }
 
 .medio {
@@ -58,7 +58,7 @@
 }
 
 .tarjeta {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .foto {
@@ -257,6 +257,32 @@ footer {
   list-style-type: none;
 }
 
+.llamasuc {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: rgb(128, 64, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.llamasuc:hover {
+  background-image: url("../../assets/img/fono.png");
+  color: rgba(0, 0, 0, 0);
+}
+
+.llamasuc:active {
+  background-image: url("../../assets/img/fono2.png");
+  box-shadow: 0 5px rgb(80, 80, 80);
+  transform: translateY(4px);
+}
+
 .precioprod {
   display: inline-block;
   padding: 15px 25px;
@@ -353,7 +379,7 @@ footer {
   }
   input[type=text],
 input[type=email] {
-    width: 55%;
+    width: 100%;
     padding: 3% 5%;
     border: 1px solid white;
     border-radius: 5%;
@@ -517,10 +543,10 @@ input[type=email] {
   }
   .formu {
     width: 35%;
-    padding: 5%;
+    padding-top: 1rem;
     border-radius: 5%;
-    margin: auto;
     background-color: #ccc;
+    margin-top: 6rem;
   }
   .video {
     width: 80%;
@@ -644,6 +670,29 @@ input[type=email] {
     90% {
       color: fuchsia;
     }
+  }
+  .llamasuc {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: rgb(128, 64, 0);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .llamasuc:hover {
+    background-image: url("../../assets/img/fono.png");
+    color: rgba(0, 0, 0, 0);
+  }
+  .llamasuc:active {
+    background-image: url("../../assets/img/fono2.png");
+    box-shadow: 0 5px rgb(80, 80, 80);
+    transform: translateY(4px);
   }
   .precioprod {
     display: inline-block;
