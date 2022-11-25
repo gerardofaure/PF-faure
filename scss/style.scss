@@ -7,3 +7,7 @@
 @import "../utiles/mq_desktop/clases";
 @import "../utiles/mq_desktop/id";
 }
+@media screen and (min-width: 1930px) {
+    @import "../utiles/mq_4K/clases";
+    @import "../utiles/mq_4K/id";
+}

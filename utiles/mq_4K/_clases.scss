@@ -1,6 +1,7 @@
 nav {
     background-color: $blanco;
     padding-bottom: 0%;
+
     ul {
 
         li {
@@ -180,7 +181,7 @@ footer {
 .tarjeta {
     display: grid;
     grid-area: dos;
-    margin-top: 0rem;
+    margin-top: 4rem;
 }
 
 .sectionSomos {
@@ -269,7 +270,7 @@ footer {
     padding-top: 1rem;
     border-radius: 5%;
     background-color: #ccc;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .video {
@@ -295,27 +296,29 @@ footer {
     background-color: white;
 }
 
-.btnFooter:hover{
-        background-color: white;
-            font-weight: bold;
-            transform: scale(1.4, 1.4);
-            transition: 0.4s;
+.btnFooter:hover {
+    background-color: white;
+    font-weight: bold;
+    transform: scale(1.4, 1.4);
+    transition: 0.4s;
 
 }
+
 .letragf {
     width: 5%;
 }
 
-.logogf{
+.logogf {
 
     opacity: 100%;
 }
+
 .btn:hover {
     opacity: 70%;
 }
 
 .btn {
-    border-color:$negro;
+    border-color: $negro;
     border-width: 0.2rem;
     color: $principal;
     padding: 0%;
@@ -337,7 +340,7 @@ footer {
 }
 
 #carouselExampleControls {
-    padding: 0rem 10rem;
+    padding: 1rem 10rem;
 }
 
 #imagen-cambiante {
@@ -415,6 +418,7 @@ footer {
     box-shadow: 0 5px rgb(80, 80, 80);
     transform: translateY(4px);
 }
+
 .llamasuc {
     display: inline-block;
     padding: 15px 25px;
@@ -457,8 +461,8 @@ footer {
 }
 
 .precioprod:hover {
-    background-color:$secundario;
-    color: black;
+    background-color: $secundario;
+    color: blue;
 }
 
 .precioprod:active {
@@ -475,11 +479,11 @@ footer {
     height: 40px;
     color: black;
     padding: 5px 10px;
-    font-weight:normal;
+    font-weight: normal;
     cursor: pointer;
     transition: all 0.8s ease;
     position: relative;
-    display: inline ;
+    display: inline;
     background: white;
     text-decoration: none;
     list-style-type: none;
