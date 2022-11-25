@@ -1,0 +1,23 @@
+#tarjSucursal {
+    background-color: $principal;
+}
+
+#letraSucursal {
+    color: $principal;
+}
+
+#carouselExampleControls {
+    padding: 0rem 10rem;
+}
+
+#imagen-cambiante {
+    width: 22rem;
+    height: 30rem;
+    background: url(../assets/img/carpintero.png) no-repeat;
+}
+
+#imagen-cambiante:hover {
+    background: url(../assets/img/carpinteroColor.png) no-repeat;
+    transition: 2s ease-in-out;
+    opacity: 40%;
+}

@@ -1,109 +1,4 @@
-nav {
-    background-color: $blanco;
-    padding-bottom: 0%;
-    ul {
-
-        li {
-            a:hover {
-                opacity: 60%;
-                transition: 0.5s;
-                color: $negro;
-            }
-
-            a {
-                background-color: rgb(230, 197, 164);
-                padding: 1rem;
-                margin-inline-start: 5px;
-                border-radius: 1rem;
-                text-decoration: none;
-                text-align: center;
-                margin-bottom: 0.5rem;
-            }
-        }
-    }
-}
-
-header {
-    grid-area: menuNavegar;
-    background-color: rgba(241, 241, 241, 0);
-
-    h2 {
-        color: $principal;
-        font-size: 1rem;
-        text-align: right;
-        margin-right: 10rem;
-    }
-}
-
-h3 {
-    opacity: 40%;
-}
-
-h3:hover {
-    opacity: 100%;
-}
-
-h1 {
-    color: $principal;
-    font-size: 1.5rem;
-    text-align: right;
-    margin-right: 10rem;
-    margin-top: 1rem;
-}
-
-label {
-    width: 40%;
-    font-weight: bold;
-    display: inline-block;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 3% 5%;
-    border: 1px solid $blanco;
-    border-radius: 5%;
-    background-color: $blanco;
-    margin: 3% 0%;
-    display: inline-block;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 1rem 2rem;
-    margin-top: 1rem;
-    border: 0.2rem solid;
-    border-radius: 7%;
-    display: block;
-    color: $blanco;
-    background-color: $principal;
-}
-
-input[type="submit"]:hover {
-    cursor: pointer;
-}
-
-textarea {
-    width: 100%;
-    height: 10rem;
-    border: 1rem solid $blanco;
-    border-radius: 3px;
-    background-color: $blanco;
-    margin: 1rem 0;
-    resize: vertical;
-    display: block;
-}
-
-
-footer {
-    grid-area: piePagina;
-    background-color: $blanco;
-
-
-}
-
 .nav-link {
-
     margin: 0.2rem;
     font-weight: bold;
     text-align: center;
@@ -125,8 +20,6 @@ footer {
     background-color: rgba(241, 241, 241, 0.486);
     margin-top: 10rem;
 }
-
-
 
 .card {
     margin-bottom: 4rem;
@@ -150,7 +43,6 @@ footer {
 .medio {
     width: 70%;
 }
-
 
 .foto {
     width: 90%;
@@ -197,7 +89,6 @@ footer {
 .w18 {
     width: 18rem;
 }
-
 
 .mainProductos {
     grid-area: cuerpo;
@@ -295,27 +186,27 @@ footer {
     background-color: white;
 }
 
-.btnFooter:hover{
-        background-color: white;
-            font-weight: bold;
-            transform: scale(1.4, 1.4);
-            transition: 0.4s;
-
+.btnFooter:hover {
+    background-color: white;
+    font-weight: bold;
+    transform: scale(1.4, 1.4);
+    transition: 0.4s;
 }
+
 .letragf {
     width: 5%;
 }
 
-.logogf{
-
+.logogf {
     opacity: 100%;
 }
+
 .btn:hover {
     opacity: 70%;
 }
 
 .btn {
-    border-color:$negro;
+    border-color: $negro;
     border-width: 0.2rem;
     color: $principal;
     padding: 0%;
@@ -325,31 +216,6 @@ footer {
     border-color: rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
     color: $principal;
-}
-
-
-#tarjSucursal {
-    background-color: $principal;
-}
-
-#letraSucursal {
-    color: $principal;
-}
-
-#carouselExampleControls {
-    padding: 0rem 10rem;
-}
-
-#imagen-cambiante {
-    width: 22rem;
-    height: 30rem;
-    background: url(../assets/img/carpintero.png) no-repeat;
-}
-
-#imagen-cambiante:hover {
-    background: url(../assets/img/carpinteroColor.png) no-repeat;
-    transition: 2s ease-in-out;
-    opacity: 40%;
 }
 
 
@@ -390,6 +256,7 @@ footer {
         color: fuchsia;
     }
 }
+
 .cierracv {
     display: inline-block;
     padding: 15px 25px;
@@ -415,6 +282,7 @@ footer {
     box-shadow: 0 5px rgb(80, 80, 80);
     transform: translateY(4px);
 }
+
 .llamasuc {
     display: inline-block;
     padding: 15px 25px;
@@ -457,7 +325,7 @@ footer {
 }
 
 .precioprod:hover {
-    background-color:$secundario;
+    background-color: $secundario;
     color: black;
 }
 
@@ -467,19 +335,17 @@ footer {
     transform: translateY(4px);
 }
 
-
-
 .btnmapafooter {
     font-size: small;
     min-width: 130px;
     height: 40px;
     color: black;
     padding: 5px 10px;
-    font-weight:normal;
+    font-weight: normal;
     cursor: pointer;
     transition: all 0.8s ease;
     position: relative;
-    display: inline ;
+    display: inline;
     background: white;
     text-decoration: none;
     list-style-type: none;

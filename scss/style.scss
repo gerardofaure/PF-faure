@@ -2,12 +2,15 @@
 @import "../utiles/colores";
 @import "../utiles/mq_mobile/clases";
 @import "../utiles/mq_mobile/id";
+@import "../utiles/mq_mobile/et";
 
 @media screen and (min-width: 768px) {
 @import "../utiles/mq_desktop/clases";
 @import "../utiles/mq_desktop/id";
+@import "../utiles/mq_desktop/et";
 }
 @media screen and (min-width: 1930px) {
     @import "../utiles/mq_4K/clases";
     @import "../utiles/mq_4K/id";
+    @import "../utiles/mq_4K/et";
 }

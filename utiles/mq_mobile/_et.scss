@@ -1,0 +1,53 @@
+label {
+    width: 40%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form {
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 0, 4rem;
+        width: 75%;
+        padding: 3% 5%;
+        border: 1px solid $blanco;
+        border-radius: 5%;
+        background-color: $blanco;
+        margin: 3% 0%;
+        display: block;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border: 0.2rem solid;
+        border-radius: 7%;
+        display: block;
+        color: $blanco;
+        background-color: $principal ;
+    }
+
+    input[type="submit"]:hover {
+        cursor: pointer;
+    }
+
+    textarea {
+        width: 100%;
+        height: 10rem;
+        border: 1rem solid $blanco;
+        border-radius: 3px;
+        background-color: $blanco;
+        margin: 1rem 0;
+        resize: vertical;
+        display: block;
+    }
+}
+
+footer {
+    grid-area: piePagina;
+    background-color: $blanco;
+    bottom: 0;
+}
