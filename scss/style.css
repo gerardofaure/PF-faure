@@ -273,6 +273,26 @@
   padding-bottom: 4rem;
 }
 
+.cierracv {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: rgb(128, 64, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.cierracv:active {
+  box-shadow: 0 5px rgb(80, 80, 80);
+  transform: translateY(4px);
+}
+
 #tarjSucursal {
   background-color: rgb(128, 64, 0);
 }
@@ -582,12 +602,7 @@ footer {
     border-radius: 15px;
     box-shadow: 0 9px #999;
   }
-  .cierracv:hover {
-    background-image: url("../../assets/img/fono.png");
-    color: rgba(0, 0, 0, 0);
-  }
   .cierracv:active {
-    background-image: url("../../assets/img/fono2.png");
     box-shadow: 0 5px rgb(80, 80, 80);
     transform: translateY(4px);
   }
@@ -1013,12 +1028,7 @@ input[type=email] {
     border-radius: 15px;
     box-shadow: 0 9px #999;
   }
-  .cierracv:hover {
-    background-image: url("../../assets/img/fono.png");
-    color: rgba(0, 0, 0, 0);
-  }
   .cierracv:active {
-    background-image: url("../../assets/img/fono2.png");
     box-shadow: 0 5px rgb(80, 80, 80);
     transform: translateY(4px);
   }
